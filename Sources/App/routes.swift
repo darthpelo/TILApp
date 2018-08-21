@@ -8,4 +8,8 @@ public func routes(_ router: Router) throws {
                 return acronym.save(on: req)
             })
     }
+
+    router.get("api", "acronyms") { req -> String in
+        return "🚧"
+    }
 }
